@@ -1,0 +1,528 @@
+/* 0-300 */
+@media (max-width: 300px) {
+	#aboutDesc {
+		font-size: 11px;
+	}
+
+	#phoneNav #slide {
+		margin-left: 35px !important;
+	}
+
+	#phoneNav {
+		margin-left: 110px !important;
+		margin-top: -50px !important;
+	}
+
+	#phoneNav a {
+		display: inline !important;
+	}
+
+	.accordion .contentBx .label:after {
+		left: 30px !important;
+		width: 40% !important;
+	}
+
+	#navbar {
+		display: none !important;
+	}
+
+	.projectsSummary:after {
+		left: 45px !important;
+		width: 27% !important;
+	}
+
+	.expSummary:after {
+		left: 67px !important;
+		width: 10% !important;
+	}
+
+	.accordionRow {
+		width: 75% !important;
+	}
+
+	.container-fluid section:nth-child(2) {
+		height: 120vh !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 230vh !important;
+	}
+
+	.container-fluid section:nth-child(4) {
+		height: 170vh !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		flex-direction: row !important;
+	}
+
+	.mdl-cell--2-col {
+		width: 500px !important;
+	}
+
+	#treasTab,
+	#toBeAddedTab {
+		font-size: 12px !important;
+		text-align: center !important;
+	}
+
+	.treasCol {
+		display: flex !important;
+		flex-direction: column !important;
+		padding: 0 !important;
+		text-align: center !important;
+		margin-top: 20px !important;
+	}
+
+	#treasTitle {
+		margin: 0 !important;
+	}
+
+	.treasCol1 {
+		padding: 0 !important;
+	}
+
+	.spoderman {
+		transform: rotate(90deg) !important;
+		top: -22px !important;
+		right: -50px !important;
+	}
+
+	.demo-card-image.mdl-card {
+		width: 340px !important;
+		height: 260px !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		border: none !important;
+	}
+}
+
+/* 300-576 */
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+	#aboutDesc {
+		font-size: 11px;
+	}
+
+	#phoneNav #slide {
+		margin-left: 35px !important;
+	}
+
+	#phoneNav {
+		margin-left: 110px !important;
+		margin-top: -50px !important;
+	}
+
+	#phoneNav a {
+		display: inline !important;
+	}
+
+	.accordion .contentBx .label:after {
+		left: 33px !important;
+		width: 54% !important;
+	}
+
+	.projectsSummary:after {
+		left: 54px !important;
+		width: 39% !important;
+	}
+
+	.expSummary:after {
+		left: 74px !important;
+		width: 25% !important;
+	}
+
+	.accordionRow {
+		width: 75% !important;
+	}
+
+	#navbar {
+		display: none !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 200vh !important;
+	}
+
+	.container-fluid section:nth-child(4) {
+		height: 140vh !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		flex-direction: row !important;
+	}
+
+	.mdl-cell--2-col {
+		width: 500px !important;
+	}
+
+	#treasTab,
+	#toBeAddedTab {
+		font-size: 12px !important;
+		text-align: center !important;
+	}
+
+	.treasCol {
+		display: flex !important;
+		flex-direction: column !important;
+		padding: 0 !important;
+		text-align: center !important;
+		margin-top: 20px !important;
+	}
+
+	#treasTitle {
+		margin: 0 !important;
+	}
+
+	.treasCol1 {
+		padding: 0 !important;
+	}
+
+	.spoderman {
+		transform: rotate(90deg) !important;
+		top: -22px !important;
+		right: -50px !important;
+	}
+
+	.demo-card-image.mdl-card {
+		width: 340px !important;
+		height: 260px !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		border: none !important;
+	}
+}
+
+/* 576 - 768 */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+	#phoneNav #slide {
+		margin-left: 35px !important;
+	}
+
+	#phoneNav {
+		margin-left: 110px !important;
+		margin-top: -50px !important;
+	}
+
+	#phoneNav a {
+		display: inline !important;
+	}
+
+	.accordion .contentBx .label:after {
+		left: 33px !important;
+		width: 54% !important;
+	}
+
+	.projectsSummary:after {
+		left: 54px !important;
+		width: 39% !important;
+	}
+
+	.expSummary:after {
+		left: 74px !important;
+		width: 25% !important;
+	}
+
+	.accordionRow {
+		width: 75% !important;
+	}
+
+	#navbar {
+		display: none !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 200vh !important;
+	}
+
+	.container-fluid section:nth-child(4) {
+		height: 140vh !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		flex-direction: row !important;
+	}
+
+	.mdl-cell--2-col {
+		width: 500px !important;
+	}
+
+	#treasTab,
+	#toBeAddedTab {
+		font-size: 12px !important;
+		text-align: center !important;
+	}
+
+	.treasCol {
+		display: flex !important;
+		flex-direction: column !important;
+		padding: 0 !important;
+		text-align: center !important;
+		margin-top: 20px !important;
+	}
+
+	#treasTitle {
+		margin: 0 !important;
+	}
+
+	.treasCol1 {
+		padding: 0 !important;
+	}
+
+	.spoderman {
+		transform: rotate(90deg) !important;
+		top: -22px !important;
+		right: -50px !important;
+	}
+
+	.demo-card-image.mdl-card {
+		width: 340px !important;
+		height: 260px !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		border: none !important;
+	}
+}
+
+/* 768 - 992 */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	#aboutDesc {
+		font-size: 12px;
+	}
+
+	.accordion .contentBx .label:after {
+		left: 35px !important;
+		width: 63% !important;
+	}
+
+	.projectsSummary:after {
+		left: 54px !important;
+		width: 52% !important;
+	}
+
+	.expSummary:after {
+		left: 74px !important;
+		width: 40% !important;
+	}
+
+	.accordionRow {
+		width: 48% !important;
+	}
+
+	#navbar {
+		right: -10px !important;
+		width: 72px !important;
+		top: 950px !important;
+		z-index: 999 !important;
+	}
+
+	.container-fluid section:nth-child(2) {
+		height: 85vh !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 165vh !important;
+	}
+
+	.container-fluid section:nth-child(4) {
+		height: 90vh !important;
+	}
+
+	.demo-card-image.mdl-card {
+		width: 600px !important;
+		height: 400px !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		flex-direction: row !important;
+	}
+
+	.mdl-cell--2-col {
+		width: 500px !important;
+	}
+
+	#treasTab,
+	#toBeAddedTab {
+		font-size: 12px !important;
+		text-align: center !important;
+	}
+
+	.treasCol {
+		display: flex !important;
+		flex-direction: column !important;
+		padding: 0 !important;
+		text-align: center !important;
+		margin-top: 20px !important;
+	}
+
+	#treasTitle {
+		margin: 0 !important;
+	}
+
+	.treasCol1 {
+		padding: 0 !important;
+	}
+
+	.spoderman {
+		transform: rotate(90deg) !important;
+		top: -22px !important;
+		right: -50px !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		width: 144% !important;
+	}
+
+	.vertical-mdl-tabs .mdl-tabs__tab-bar {
+		border: none !important;
+	}
+
+}
+
+/* 992 - 1200 */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	#treasTab,
+	#toBeAddedTab {
+		font-size: 1px !important;
+	}
+
+	.accordion .contentBx .label:after {
+		left: 30px !important;
+		width: 72% !important;
+	}
+
+	.projectsSummary:after {
+		left: 48px !important;
+		width: 65% !important;
+	}
+
+	.expSummary:after {
+		left: 67px !important;
+		width: 58% !important;
+	}
+
+	.accordionRow {
+		width: 48% !important;
+	}
+
+	#navbar {
+		right: 0px !important;
+		top: 420px !important;
+		z-index: 999 !important;
+	}
+
+	.container-fluid section:nth-child(2) {
+		height: 130vh !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 350vh !important;
+	}
+
+	.container-fluid section:nth-child(4) {
+		height: 130vh !important;
+	}
+
+	.demo-card-image.mdl-card {
+		width: 500px !important;
+		height: 400px !important;
+	}
+}
+
+/* 1200 - 1400 */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+
+	#treasTab,
+	#toBeAddedTab {
+		font-size: 11px !important;
+	}
+
+	.accordion .contentBx .label:after {
+		left: 30px !important;
+		width: 72% !important;
+	}
+
+	.projectsSummary:after {
+		left: 48px !important;
+		width: 65% !important;
+	}
+
+	.expSummary:after {
+		left: 67px !important;
+		width: 58% !important;
+	}
+
+	.accordionRow {
+		width: 48% !important;
+	}
+
+	#navbar {
+		right: 0px !important;
+		top: 600px !important;
+		z-index: 999 !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 160vh !important;
+	}
+
+	.demo-card-image.mdl-card {
+		width: 500px !important;
+		height: 400px !important;
+	}
+}
+
+/* 1400 - 1919 */
+@media only screen and (min-width: 1400px) and (max-width: 1919px) {
+	#navbar {
+		right: 0px !important;
+		top: 550px !important;
+		z-index: 999 !important;
+	}
+
+	.container-fluid section:nth-child(2) {
+		height: 130vh !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 150vh !important;
+	}
+}
+
+/* Fixing heights */
+/* 0-300 */
+@media only screen and (max-height: 300px) {
+	#navbar {
+		right: 0px !important;
+		top: 210px !important;
+		z-index: 999 !important;
+	}
+
+	.container-fluid section:nth-child(2) {
+		height: 200vh !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 650vh !important;
+	}
+
+	.container-fluid section:nth-child(4) {
+		height: 300vh !important;
+	}
+}
+
+/* 1000-1200 */
+@media only screen and (min-height: 1000px) and (max-height: 1200px) {
+	#navbar {
+		right: 0px !important;
+		top: 850px !important;
+		z-index: 999 !important;
+	}
+
+	.container-fluid section:nth-child(3) {
+		height: 200vh !important;
+	}
+}

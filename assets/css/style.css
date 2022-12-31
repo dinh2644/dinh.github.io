@@ -1,0 +1,512 @@
+* {
+	margin: 0 !important;
+	padding: 0 !important;
+	scroll-behavior: smooth !important;
+}
+
+@font-face {
+	font-family: "PonteVecchioNFW01-Regular";
+	src: url(../fonts/PonteVecchioNFW01Regular.ttf);
+}
+
+@font-face {
+	font-family: "Baskerville Old Face";
+	src: url(../fonts/BaskervilleOldFace.ttf);
+}
+
+@font-face {
+	font-family: "Times New Roman";
+	src: url(../fonts/TimesNewRoman.ttf);
+}
+
+@font-face {
+	font-family: "Granjon";
+	src: url(../fonts/Granjon.ttf);
+}
+
+/* Prevent side scrolling on mobile view */
+body .container {
+	overflow: hidden;
+}
+
+/* Sticky side nav */
+#navbar {
+	position: fixed;
+	right: 80px;
+	width: 72px;
+	top: 600px;
+	display: block;
+	transition: opacity 1s;
+	opacity: 0;
+	z-index: 999;
+}
+
+#navbar.reveal {
+	opacity: 1;
+}
+
+.nav .nav-item a {
+	font-family: 'Granjon';
+	text-decoration: none !important;
+	color: black !important;
+}
+
+/********************************** MAIN PAGE **********************************/
+
+/* Table of content positioning */
+.mainContainer {
+	margin: 100px 0 auto !important;
+	position: relative;
+}
+
+/* Snap scroll setup */
+::-webkit-scrollbar {
+	/* removes scrollbar*/
+	display: none;
+}
+
+html {
+	/* scroll-snap-type: y mandatory; */
+}
+
+.container-fluid section {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: white;
+	/* scroll-snap-align: start; */
+}
+
+.container-fluid section .content {
+	max-width: 800px;
+	padding: 40px;
+	text-align: center;
+}
+
+/* Tu Dinh */
+#tuDinh {
+	font-family: 'PonteVecchioNFW01-Regular' !important;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 220.5%;
+	letter-spacing: 0.2em;
+	color: #000000;
+	margin-bottom: 25px !important;
+}
+
+/* Enso circle */
+#ensoCircle {
+	width: 184px;
+	height: auto;
+}
+
+/* Contents */
+#contents {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+}
+
+/* Accordiion */
+.aboutSummary,
+.projectsSummary,
+.expSummary {
+	font-family: 'Baskerville Old Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	letter-spacing: 0.2em;
+	color: #000000;
+}
+
+.accordLinks {
+	text-decoration: none !important;
+}
+
+.projectsSummary a,
+.expSummary a {
+	color: #000000 !important;
+	text-decoration: none !important;
+}
+
+#tuDinh,
+#contents {
+	pointer-events: none;
+}
+
+.aboutSummary,
+.projectsSummary,
+.expSummary {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Old versions of Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.accordionRow {
+	width: 35%;
+}
+
+summary {
+	list-style: none;
+}
+
+.accordion {
+	max-width: 800px;
+}
+
+.accordion .contentBx {
+	position: relative;
+	margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+	position: relative;
+	cursor: pointer;
+	font-family: 'Baskerville Old Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	letter-spacing: 0.2em;
+	color: #000000;
+}
+
+.accordion .contentBx .label:after {
+	/* line */
+	content: '';
+	display: block;
+	position: relative;
+	bottom: 20px;
+	margin: auto;
+	left: 30px;
+	width: 72%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+.accordion .contentBx.active .label .indexNum {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	transition: 0.5s;
+}
+
+.accordion .contentBx .label .indexNum {
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	transition: 0.5s;
+}
+
+.accordion .contentBx .content {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+	height: 264px;
+}
+
+#aboutLogos {
+	margin-left: 3px !important;
+}
+
+#aboutLogos a {
+	text-decoration: none;
+	opacity: 0.8;
+	margin-right: 5px !important;
+}
+
+#aboutLogos a img {
+	margin-top: -1px !important;
+	transition: 0.5s !important;
+}
+
+#aboutLogos a img:hover {
+	opacity: 0.7;
+}
+
+/* Line */
+
+.projectsSummary:after {
+	content: '';
+	display: block;
+	position: relative;
+	bottom: 20px;
+	margin: auto;
+	left: 45px;
+	width: 65%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+.expSummary:after {
+	content: '';
+	display: block;
+	position: relative;
+	bottom: 20px;
+	margin: auto;
+	left: 66px;
+	width: 56%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+/* Index numbers */
+.indexNum {
+	float: right;
+	font-family: 'Times New Roman';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 25px;
+	color: #000000;
+}
+
+/* About description */
+#aboutDesc {
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 220.5%;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin-top: 25px !important;
+	font-size: clamp(11px, 8vw, 16px);
+}
+
+/********************************** PROJECTS PAGE **********************************/
+.projects {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+}
+
+.demo-card-image.mdl-card {
+	width: 400px;
+	height: 300px;
+	margin-bottom: 50px !important;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	border-radius: 10px !important;
+}
+
+.PC1 {
+	background: url('../img/arV1Proj.png') center / cover !important;
+}
+
+.PC2 {
+	background: url('../img/portV1Proj.png') center / cover !important;
+}
+
+.PC3 {
+	background: url('../img/arV2Proj.png') center / cover !important;
+}
+
+.PC4 {
+	background: url('../img/javaProj.png') center / cover !important;
+}
+
+.img-description {
+	padding-top: 50px !important;
+	color: white;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+	background-color: rgba(6, 6, 6, 0.5);
+	height: 100%;
+	width: 100%;
+	font-family: 'Granjon' !important;
+}
+
+.mdl-card:hover .img-description {
+	opacity: 1 !important;
+}
+
+
+.img-description h2 {
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 0.05em !important;
+	text-align: center !important;
+	font-family: 'Granjon' !important;
+}
+
+.img-description p {
+	margin: 20px !important;
+	text-align: center !important;
+	font-size: 18px !important;
+	font-family: 'Granjon' !important;
+}
+
+
+/********************************** EXPERIENCE PAGE **********************************/
+
+/* CSS stuff */
+.experience {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+}
+
+#treasTab,
+#toBeAddedTab {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+}
+
+.treasCol {
+	display: flex;
+	align-items: center;
+	padding-left: 50px !important;
+}
+
+.treasCol1 {
+	display: flex;
+	padding-left: 170px !important;
+    margin-top: 20px !important;
+}
+
+.treasDesc li::before {
+	content: "➢ ";
+}
+
+.treasDesc {
+	font-size: 17px;
+	color: black;
+}
+
+#treasTitle {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+	margin-left: 50px !important;
+	margin-top: 10px !important;
+}
+
+#treasDuration {
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+li {
+	list-style: none;
+}
+
+.br {
+	display: block !important;
+	margin-bottom: 1em !important;
+    font-family: 'granjon';
+}
+
+.fadeInUp {
+	animation: fadeInUp;
+	/* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1.5s;
+	/* don't forget to set a duration! */
+}
+
+/*Vertical Tabs*/
+.vertical-mdl-tabs .mdl-tabs__tab-bar {
+	-webkit-flex-direction: column;
+	/* vertical setup */
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-bottom: 35px;
+	height: inherit;
+	border-bottom: none;
+	border-right: 1px solid rgba(10, 11, 49, 0.20);
+	/* side line */
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab {
+	width: 100%;
+	/* width of where u can click the tabs */
+	padding-left: 10px !important;
+	height: 48px;
+	padding-right: 50px !important;
+	box-sizing: border-box;
+	letter-spacing: 2px;
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab:hover {
+	background: none !important;
+	/* removes hover effect */
+}
+
+/* INDICATOR */
+.mdl-tabs__tab.is-active {
+	border-right: 3px solid #ED462F !important;
+	top: 0px;
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+	content: inherit;
+	/* removes bottom blue line */
+}
+
+.mdl-tabs__tab {
+	text-align: left !important;
+}
+
+.spoderman {
+	position: relative;
+	right: 50px !important;
+	top: 10px !important;
+}
+
+#phoneNav {
+	position: absolute;
+}
+
+#phoneNav a {
+	font-family: 'Granjon';
+	display: none;
+	text-decoration: none;
+	color: black;
+}
+
+.dinh {
+	font-family: 'PonteVecchioNFW01-Regular';
+	line-height: 500%;
+	letter-spacing: 0.15em;
+	opacity: 0.7;
+	pointer-events: none;
+}
