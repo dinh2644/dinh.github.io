@@ -39,10 +39,12 @@ body .container {
 	transition: opacity 1s;
 	opacity: 0;
 	z-index: 999;
+	pointer-events: none;
 }
 
 #navbar.reveal {
 	opacity: 1;
+	pointer-events: all;
 }
 
 .nav .nav-item a {
