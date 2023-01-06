@@ -8,16 +8,14 @@
     <link rel="icon" href="assets/img/yin-yang.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/material.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <style></style>
   </head>
   <body>
     <div class="container-fluid">
-      
-      
+
+
       <!--Side nav-->
       <nav id="navbar">
         <ul class="nav flex-column translate-middle text-end">
@@ -71,11 +69,12 @@
           <div class="row mx-auto accordionRow">
             <div class="col">
               <div class="accordion mb-4">
+                <!--About Accordion-->
                 <div class="contentBx">
                   <div class="label">About <span class="indexNum">1</span>
                   </div>
                   <div class="content">
-                    <p id="aboutDesc" class="text-start"> Hi, I’m Tu Dinh. A computer science student from NY. I have <br> great interest to deepen my understanding in full-stack <br> development and various areas of technology. <br>
+                    <p class="aboutDesc text-start"> Hi, I’m Tu Dinh. A computer science student from NY. I have <br> great interest to deepen my understanding in full-stack <br> development and various areas of technology. <br>
                       <br> Expected graduation: May 2023 <br> School: Rockland Community College <br> Connect: <span id="aboutLogos">
                         <a href="mailto:dinh2644.mail@gmail.com">
                           <img src="assets/img/envelope.svg" alt="" width="15" height="15">
@@ -91,14 +90,24 @@
                   </div>
                 </div>
               </div>
-              <a href="#projectsAnchor" class="accordLinks">
-                <div class="projectsSummary mb-4">Projects <span class="indexNum">2</span>
+              <div class="accordion">
+                <!--Projects Accordion-->
+                <div class="contentBx">
+                  <a href="#projectsAnchor" class="accordLinks">
+                    <div class="projectsSummary mb-4">Projects <span class="indexNum">2</span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#experienceAnchor" class="accordLinks">
-                <div class="expSummary">Experience <span class="indexNum">3</span>
+              </div>
+              <div class="accordion">
+                <!--Experience Accordion-->
+                <div class="contentBx">
+                  <a href="#experienceAnchor" class="accordLinks">
+                    <div class="expSummary">Experience <span class="indexNum">3</span>
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -116,32 +125,32 @@
           </div>
           <!--Cards-->
           <div class="row">
-            <div class="col col-xxl-4 col-xl-6 cardRow d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
-              <div class="demo-card-image mdl-card PC1">
-                <div class="img-description align-middle">
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+              <div class="card PC1">
+                <div class="img-description">
                   <h2>Anime Recommender v1</h2>
                   <p>A Code.org project to get you started with an anime show.</p>
                 </div>
               </div>
             </div>
-            <div class="col col-xxl-4 col-xl-6 cardRow d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
-              <div class="demo-card-image mdl-card PC2">
-                <div class="img-description align-middle">
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+              <div class="card PC2">
+                <div class="img-description">
                   <h2>Portfolio v1</h2>
                   <p>A pure HTML/CSS project for first portfolio.</p>
                 </div>
               </div>
             </div>
-            <div class="col col-xxl-4 col-xl-6 cardRow d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
-              <div class="demo-card-image mdl-card PC3">
-                <div class="img-description align-middle">
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+              <div class="card PC3">
+                <div class="img-description">
                   <h2>Anime Recommender v2</h2>
-                  <p>A recommender system utilzing Python's scikit-learn, pandas, cosine_similiarity, and count vectorizer through Streamlit's framework.</p>
+                  <p>A recommender system utilzing Python's scikit-learn and pandas visualized w/ Streamlit's framework.</p>
                 </div>
               </div>
             </div>
-            <div class="col col-xxl-4 col-xl-6 cardRow d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
-              <div class="demo-card-image mdl-card PC4">
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+              <div class="card PC4">
                 <div class="img-description">
                   <h2>Audit Management System</h2>
                   <p>Object oriented programming project for an auditing system with an Aldi theme.</p>
@@ -163,66 +172,43 @@
             </div>
           </div>
           <!--Vertical tabs-->
-          <div class="row vertTabRow">
-            <div class="col-xl-12">
-              <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-                <div class="mdl-grid mdl-grid--no-spacing">
-                  <div class="mdl-cell mdl-cell--2-col mt-4">
-                    <div class="mdl-tabs__tab-bar" data-aos="fade-up" data-aos-duration="2000">
-                      <!--side bar-->
-                      <a href="#tab1-panel" class="mdl-tabs__tab is-active">
-                        <span id="treasTab">U.S. Treasury</span>
-                      </a>
-                      <a href="#tab2-panel" class="mdl-tabs__tab">
-                        <span id="toBeAddedTab">to be added</span>
-                      </a>
-                    </div>
+          <div class="row tabs">
+            <!--Tab headings-->
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 tab-header mt-3" data-aos="fade-up" data-aos-duration="2000">
+              <div class="active tabHeader">U.S. TREASURY</div>
+              <div class="tabHeader ">TO BE ADDED</div>
+              <!--Tab indicator-->
+              <div class="tab-indicator"></div>
+            </div>
+            <!--Tab content-->
+            <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-12 mt-3">
+              <div class="tab-content">
+                <div class="tab-pane active" data-aos="fade-up" data-aos-duration="2000">
+                  <img src="assets/img/bank.png" alt="" width="70" height="70">
+                  <div class="treasTitleDuration" id="treasTitle"> Software Developer Intern @ Department of Treasury <br>
+                    <span id="treasDuration">Jun 2022 - PRESENT</span>
                   </div>
-                  <div class="tab-indicator"></div>
-                  <!--Output-->
-                  <div class="mdl-cell mdl-cell--10-col" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="mdl-tabs__panel is-active " id="tab1-panel">
-                      <div class="row">
-                        <div class="col-xl-12 treasCol">
-                          <div>
-                            <img src="assets/img/bank.png" alt="" width="70" height="70">
-                          </div>
-                          <div id="treasTitle"> Software Developer Intern @ Department of Treasury <br>
-                            <span id="treasDuration">Jun 2022 - PRESENT</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row fadeInUp" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="col-xl-12 treasCol1">
-                          <ul class="treasDesc">
-                            <li class="br">&ensp;Designed front-end work for OCIO’s OneCT main page. <strong> (HTML, Bootstrap4, Jquery, Datatable)</strong>
-                            </li>
-                            <li class="br">&ensp;Test engineered Treasury’s OneCT software, supported OCIO to repair OneCT’s software functionality. <br>
-                              <strong>&emsp;&ensp;(Excel/Test engineering)</strong>
-                            </li>
-                            <li class="br">&ensp;Developed a student loans/issue tracker web form. Used to append data to SharePoint’s library/list for data collection. <br>
-                              <strong>&emsp;&ensp;(C#, SP Powershell, IIS, SP Central Admin, VS 2017)</strong>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mdl-tabs__panel" id="tab2-panel">
-                      <div class="row">
-                        <div class="col-xl-12 treasCol">
-                          <div class="spoderman">
-                            <img src="assets/img/spiderman.gif" alt="" width="60" height="60">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <ul class="treasDesc fadeInUp" data-aos="fade-left" data-aos-duration="1000">
+                    <li class="br">&ensp;Designed front-end work for OCIO’s OneCT main page. <strong> (HTML, Bootstrap4, Jquery, Datatable)</strong>
+                    </li>
+                    <li class="br">&ensp;Test engineered Treasury’s OneCT software, supported OCIO to repair OneCT’s software functionality. <br>
+                      <strong>&emsp;&ensp;(Excel/Test engineering)</strong>
+                    </li>
+                    <li class="br">&ensp;Developed a student loans/issue tracker web form. Used to append data to SharePoint’s library/list for data collection. <br>
+                      <strong>&emsp;&ensp;(C#, SP Powershell, IIS, SP Central Admin, VS 2017)</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane">
+                  <!--To be Added-->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
       <!--For phones-->
       <nav id="phoneNav">
         <a href="#aboutAnchor">about/</a>
@@ -242,17 +228,19 @@
         </span>
       </nav>
     </div>
-    <!--End container-fluid-->
+
+
     <!--Footer-->
     <div class="container-fluid">
       <footer>
         <p class="text-center text-muted dinh">Dinh &copy; 2022</p>
       </footer>
     </div>
+
+    
     <!--Scripts-->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/material.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script>
