@@ -305,6 +305,9 @@ summary {
 .PC4 {
 	background: url('../img/javaProj.png') center / cover !important;
 }
+.PC5 {
+	background: url('../img/spellchecker-pic.png') center / cover !important;
+}
 
 .card .img-description {
 	padding-top: 50px !important;
