@@ -1,2 +1,1 @@
-# https://dinh2644.github.io/dinh.github.io/
-portfolio v2
+portfolio v2 (old, is now my-website)
