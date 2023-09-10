@@ -1,1 +1,2 @@
-portfolio v2 (old, is now my-website)
+https://dinh2644.github.io/dinh.github.io/
+portfolio v2
